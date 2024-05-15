@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EduX</string>
+    <string name="damy_text_1">Not that this page has not been implemented fully and will be continued on Monday. Please get damy questions that I can include here.</string>
+    <string name="input_note">Input note....</string>
+    <string name="note_title">Note Title</string>
+    <string name="already_have_an_account_signin">Already have an account? signin.</string>
+    <string name="descending">Descending</string>
+    <string name="ascending">Ascending</string>
+    <string name="filter">Filter</string>
+    <string name="exp">Filter</string>
+</resources>

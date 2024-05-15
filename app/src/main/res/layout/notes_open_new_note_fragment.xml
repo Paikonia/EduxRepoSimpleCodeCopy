@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/news_note_appbar">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleEnabled="false"
+            android:id="@+id/personal_note_activity_toolbar"
+            app:toolbarId="@id/pna_toolbar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="parallax"
+                android:id="@+id/pna_toolbar"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:id="@+id/enter_personal_note_title"
+        android:background="@drawable/custom_setup_input"
+        android:paddingVertical="8dp"
+        android:textSize="30sp"
+        android:layout_below="@+id/news_note_appbar"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="12dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject"
+        android:id="@+id/enter_personal_note_subject"
+        android:background="@drawable/custom_setup_input"
+        android:paddingVertical="8dp"
+        android:textSize="30sp"
+        android:layout_below="@+id/enter_personal_note_title"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="12dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/plain_input_layout"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/enter_personal_note_subject"
+        android:paddingBottom="4dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Body"
+            android:id="@+id/enter_personal_note_body"
+            android:background="@drawable/plain_input"
+            android:textSize="30sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="5dp"
+            />
+
+    </ScrollView>
+
+
+</RelativeLayout>

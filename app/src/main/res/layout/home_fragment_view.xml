@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newsfeed_appbarlayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll"
+            android:id="@+id/newsfeed_toolbar_layout"
+            app:toolbarId="@id/newsfeed_toolbar"
+            >
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/newsfeed_toolbar"
+                app:layout_collapseMode="parallax"
+                app:title="News feed"
+                />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/newsfeed_recycler_view"
+        tools:listitem="@layout/news_feed_tab" />
+
+   <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom|end"
+       android:layout_marginEnd="30dp"
+       android:layout_marginBottom="30dp"
+       android:id="@+id/filterActivator"
+       app:icon="@drawable/ic_filter"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/ic_list_order"
+        android:id="@+id/date_ascending"
+        android:contentDescription="@string/ascending"
+        android:visibility="invisible"
+        android:clickable="false"
+        android:focusable="false"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/ic_list"
+        android:id="@+id/date_descending"
+        android:contentDescription="@string/descending"
+        android:visibility="invisible"
+        android:clickable="false"
+        android:focusable="false"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

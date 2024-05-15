@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main_page_home_fragment">
+
+    <fragment
+        android:id="@+id/main_page_home_fragment"
+        android:name="com.example.edux.fragments.mainpagefragments.HomeFragment"
+        android:label="NewsFeed"
+        tools:layout="@layout/home_fragment_view"
+        >
+
+
+        <action
+            android:id="@+id/action_main_page_home_fragment_to_main_page_personal_notes"
+            app:destination="@id/main_page_personal_notes" />
+        <action
+            android:id="@+id/action_main_page_home_fragment_to_main_page_revision_and_papers"
+            app:destination="@id/main_page_revision_and_papers" />
+        <action
+            android:id="@+id/action_main_page_home_fragment_to_main_page_notes_and_reference"
+            app:destination="@id/main_page_notes_and_reference" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/main_page_revision_and_papers"
+        android:name="com.example.edux.fragments.mainpagefragments.ExaminationFragment"
+        android:label="NewsFeed"
+        tools:layout="@layout/examination_fragment"
+        >
+
+
+        <action
+            android:id="@+id/action_main_page_revision_and_papers_to_main_page_notes_and_reference"
+            app:destination="@id/main_page_notes_and_reference" />
+        <action
+            android:id="@+id/action_main_page_revision_and_papers_to_main_page_personal_notes"
+            app:destination="@id/main_page_personal_notes" />
+        <action
+            android:id="@+id/action_main_page_revision_and_papers_to_main_page_home_fragment"
+            app:destination="@id/main_page_home_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/main_page_notes_and_reference"
+        android:name="com.example.edux.fragments.mainpagefragments.NoteAndBooksFragment"
+        android:label="NewsFeed"
+        tools:layout="@layout/main_page_books_notes_fragment_view"
+        >
+
+
+        <action
+            android:id="@+id/action_main_page_notes_and_reference_to_main_page_revision_and_papers"
+            app:destination="@id/main_page_revision_and_papers" />
+        <action
+            android:id="@+id/action_main_page_notes_and_reference_to_main_page_personal_notes"
+            app:destination="@id/main_page_personal_notes" />
+        <action
+            android:id="@+id/action_main_page_notes_and_reference_to_main_page_home_fragment"
+            app:destination="@id/main_page_home_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/main_page_personal_notes"
+        android:name="com.example.edux.fragments.mainpagefragments.PersonalNotesFragment"
+        android:label="NewsFeed"
+        tools:layout="@layout/person_notes_fragment"
+        >
+
+        <action
+            android:id="@+id/action_main_page_personal_notes_to_main_page_home_fragment"
+            app:destination="@id/main_page_home_fragment" />
+        <action
+            android:id="@+id/action_main_page_personal_notes_to_main_page_revision_and_papers"
+            app:destination="@id/main_page_revision_and_papers" />
+        <action
+            android:id="@+id/action_main_page_personal_notes_to_main_page_notes_and_reference"
+            app:destination="@id/main_page_notes_and_reference" />
+    </fragment>
+
+</navigation>

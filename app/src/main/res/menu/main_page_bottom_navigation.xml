@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/main_page_news_feed"
+        android:icon="@drawable/custom_news_feed"
+        android:title="News feed"
+        />
+
+    <item android:title="Revision papers"
+        android:id="@+id/main_page_papers"
+        android:icon="@drawable/custom_paper"
+        />
+
+    <item android:title="Notes"
+        android:id="@+id/main_page_notes"
+        android:icon="@drawable/custom_books"
+        />
+
+    <item android:icon="@drawable/custom_notes"
+        android:id="@+id/main_page_personal_notes"
+        android:title="Personal notes" />
+
+    <item android:icon="@drawable/custom_groups"
+        android:id="@+id/main_page_contacts_and_groups"
+        android:title="Contacts and groups" />
+
+
+
+</menu>

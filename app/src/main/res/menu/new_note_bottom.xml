@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="save"
+        android:icon="@drawable/custom_save"
+        android:id="@+id/save_new_note"
+        app:showAsAction="always"/>
+
+    <item android:title="save"
+        android:icon="@drawable/custom_cancel"
+        android:id="@+id/cancel_new_note"
+        app:showAsAction="always"/>
+
+</menu>

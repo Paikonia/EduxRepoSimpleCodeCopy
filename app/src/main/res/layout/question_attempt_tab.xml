@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/open_exam_question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Question Number"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginVertical="3dp"/>
+
+    <TextView
+        android:id="@+id/add_answer_text_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/small_btn_bg"
+        android:clickable="false"
+        android:drawablePadding="2dp"
+        android:focusable="false"
+        android:visibility="invisible"
+        android:padding="4dp"
+        android:text="Add"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/custom_add"
+        app:layout_constraintBottom_toTopOf="@+id/open_exam_question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toEndOf="@+id/open_exam_question_number"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/open_exam_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/open_exam_question_number"
+        android:layout_marginHorizontal="12dp"
+        android:text="Question"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/open_exam_answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/open_exam_question_number"
+        app:layout_constraintTop_toBottomOf="@+id/open_exam_question_number"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"/>
+
+    <EditText
+        android:id="@+id/open_exam_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/open_exam_question"
+        android:hint="Answer"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/save_answer_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/save_answer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/open_exam_answer"
+        android:background="@drawable/small_btn_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="4dp"
+        android:text="Save"
+        android:layout_marginEnd="12dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/custom_save"
+        android:drawablePadding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <TextView
+        android:id="@+id/edit_answer_button_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/small_btn_bg"
+        android:clickable="true"
+        android:drawablePadding="2dp"
+        android:focusable="true"
+        android:padding="4dp"
+        android:text="Edit answer"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginStart="12dp"
+        app:drawableStartCompat="@drawable/custom_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save_answer_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
